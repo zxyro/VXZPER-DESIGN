@@ -1,0 +1,200 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #2C4E80;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(42, 98, 154);
+    color: rgb(42, 98, 154);
+}
+
+header .logo img {
+    height: 60px;
+    border-radius: 50px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 10px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 15px;
+}
+
+#hero {
+    background-image: url('WhatsApp\ Image\ 2024-06-05\ at\ 20.42.03_39853536.jpg'); /* Ganti dengan URL gambar Anda */
+    background-size: cover;
+    background-position: center;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 150px 20px;
+}
+
+.hero-content {
+    background-color: rgb(42, 98, 154);
+    padding: 20px;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+#hero .cta-button {
+    background-color: rgb(42, 98, 154);
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+#services, #about, #testimonials, #contact {
+    padding: 40px 20px;
+    text-align: center;
+    color: aliceblue;
+}
+
+.service-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.service-cards .card {
+    background-color: rgb(42, 98, 154);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    width: 200px;
+}
+
+#testimonials .testimonials {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+#contact form input, #contact form textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#contact form button {
+    background-color: #40A578;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#contact p a {
+    color: #40A578;
+    text-decoration: none;
+}
+
+footer {
+    background-color: rgb(42, 98, 154);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+footer .social-media a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .service-cards {
+        flex-direction: column;
+    }
+
+    #hero {
+        padding: 50px 20px;
+    }
+
+    #hero h1 {
+        font-size: 24px;
+    }
+
+    #hero p {
+        font-size: 16px;
+    }
+
+    .hero-content {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 10px;
+    }
+
+    header .logo img {
+        height: 40px;
+    }
+
+    header nav ul {
+        gap: 5px;
+    }
+
+    #hero {
+        padding: 30px 10px;
+    }
+
+    #hero h1 {
+        font-size: 20px;
+    }
+
+    #hero p {
+        font-size: 14px;
+    }
+
+    .hero-content {
+        padding: 10px;
+    }
+
+    .service-cards .card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    #contact form {
+        width: 100%;
+        padding: 0 10px;
+    }
+}
